@@ -6,90 +6,123 @@
 <title>📘 جدول کامل مستندات Python 3.13.5</title>
 <style>
   /* Reset */
-  * {
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #1f2937 0%, #3b82f6 100%);
+  color: #e0e7ff;
+  margin: 40px 20px;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #bfdbfe;
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  user-select: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #1e293b;
+  box-shadow:
+    0 4px 15px rgba(59,130,246,0.6),
+    inset 0 0 20px rgba(99,179,237,0.8);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+thead {
+  background: #2563eb;
+  color: #e0e7ff;
+  user-select: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+
+th, td {
+  padding: 16px 20px;
+  font-size: 1rem;
+  vertical-align: top;
+  border-bottom: 1px solid #3b82f6aa;
+  transition: background-color 0.3s ease;
+}
+
+th {
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+tbody tr:hover {
+  background: #2563eb44;
+  cursor: default;
+}
+
+a {
+  color: #93c5fd;
+  text-decoration: none;
+  word-break: break-word;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #dbeafe;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
   }
-  body {
-    font-family: "Tahoma", sans-serif;
-    background: #f9fafb;
-    color: #222;
-    margin: 20px;
-    direction: rtl;
-    text-align: right;
-    line-height: 1.5;
+  thead tr {
+    display: none;
   }
-  h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #2c3e50;
-    font-weight: 700;
+  tbody tr {
+    margin-bottom: 25px;
+    border-radius: 18px;
+    background: #1e293bdd;
+    box-shadow:
+      0 6px 20px rgba(59,130,246,0.7),
+      inset 0 0 14px rgba(99,179,237,0.9);
+    padding: 18px 20px;
   }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  thead {
-    background: #34495e;
-    color: white;
-  }
-  th, td {
-    padding: 12px 15px;
-    border-bottom: 1px solid #ddd;
+  tbody td {
+    border: none;
+    padding-left: 50%;
+    position: relative;
+    text-align: left;
     font-size: 0.95rem;
-    vertical-align: top;
+    color: #bfdbfe;
   }
-  th {
-    font-weight: 600;
-    font-size: 1.1rem;
+  tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: right;
+    color: #93c5fd;
   }
-  tbody tr:hover {
-    background: #f0f3f7;
-  }
-  a {
-    color: #2980b9;
-    text-decoration: none;
-    word-break: break-word;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  /* Responsive */
-  @media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-      display: block;
-    }
-    thead tr {
-      display: none;
-    }
-    tbody tr {
-      margin-bottom: 25px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 12px 10px;
-      background: #fff;
-    }
-    tbody td {
-      border: none;
-      padding-left: 50%;
-      position: relative;
-      text-align: left;
-      font-size: 0.9rem;
-    }
-    tbody td::before {
-      content: attr(data-label);
-      position: absolute;
-      left: 15px;
-      width: 45%;
-      font-weight: 700;
-      white-space: nowrap;
-      text-align: right;
-      color: #34495e;
-    }
-  }
+}
+
 </style>
 </head>
 <body>

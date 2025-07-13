@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>📚 صفحه اصلی مستندات</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap');
+  /* Reset */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #1f2937 0%, #3b82f6 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e0e7ff;
+    padding: 60px 20px;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    user-select: none;
+  }
+  .container {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1050px;
+    width: 100%;
+  }
+  a.card-link {
+    text-decoration: none;
+    color: inherit;
+    width: 320px;
+    perspective: 1000px;
+  }
+  .card {
+    background: #1e293b;
+    border-radius: 18px;
+    padding: 32px 28px;
+    box-shadow:
+      0 4px 15px rgba(59,130,246,0.4),
+      inset 0 0 12px rgba(99,179,237,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition:
+      transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    cursor: pointer;
+    height: 408px;
+  }
+  a.card-link:hover .card {
+    transform: translateY(-15px) rotateX(8deg);
+    box-shadow:
+      0 15px 40px rgba(59,130,246,0.7),
+      inset 0 0 18px rgba(99,179,237,0.9);
+  }
+  .emoji {
+    font-size: 4.8rem;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  }
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    color: #bfdbfe;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  }
+  .desc {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #cbd5e1cc;
+    text-align: center;
+    user-select: text;
+  }
+  /* Button style inside cards if needed */
+  .btn {
+    margin-top: 12px;
+    background: #3b82f6;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(59,130,246,0.6);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  .btn:hover {
+    background: #60a5fa;
+    box-shadow: 0 10px 20px rgba(96,165,250,0.8);
+  }
+
+  /* Responsive */
+  @media (max-width: 960px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    a.card-link {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>📚 صفحه اصلی مستندات</h1>
+  <div class="container">
+    <a href="python_docs.html" class="card-link" aria-label="مستندات Python 3.13.5">
+      <div class="card" tabindex="0">
+        <div class="emoji" aria-hidden="true">🐍</div>
+        <div class="title">مستندات Python 3.13.5</div>
+        <div class="desc">
+          مستندات جامع پایتون ۳.۱۳.۵ شامل آموزش‌ها، مراجع زبان، کتابخانه استاندارد و نکات مهم.
+        </div>
+      </div>
+    </a>
+
+    <a href="django_docs.html" class="card-link" aria-label="مستندات Django">
+      <div class="card" tabindex="0">
+        <div class="emoji" aria-hidden="true">🌐</div>
+        <div class="title">مستندات Django</div>
+        <div class="desc">
+          راهنمای کامل و کاربردی جنگو برای ساخت پروژه‌ها، مدل‌ها، ویوها، قالب‌ها و تنظیمات.
+        </div>
+      </div>
+    </a>
+
+    <a href="drf_docs.html" class="card-link" aria-label="مستندات Django REST Framework">
+      <div class="card" tabindex="0">
+        <div class="emoji" aria-hidden="true">🚀</div>
+        <div class="title">مستندات Django REST Framework</div>
+        <div class="desc">
+          آموزش‌ها و راهنمای API نویسی با DRF، ویوسِت‌ها، مسیریابی، مجوزها و احراز هویت.
+        </div>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
