@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>جدول کامل مستندات Django REST Framework</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Tahoma", sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+      margin: 20px;
+      padding: 0;
+      direction: rtl;
+      text-align: right;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+      font-weight: 700;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    thead {
+      background-color: #34495e;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+      font-size: 0.95rem;
+    }
+
+    th {
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    tbody tr:hover {
+      background-color: #f0f3f7;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead tr {
+        display: none;
+      }
+      tbody tr {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        background: #fff;
+      }
+      tbody td {
+        border: none;
+        padding-left: 50%;
+        position: relative;
+        text-align: left;
+        font-size: 0.9rem;
+      }
+      tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: 700;
+        white-space: nowrap;
+        text-align: right;
+        color: #34495e;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>📗 جدول کامل مستندات Django REST Framework</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ردیف</th>
+        <th>بخش مستندات</th>
+        <th>توضیح مختصر</th>
+        <th>لینک مستقیم (آدرس دقیق)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="🔢 ردیف">1</td>
+        <td data-label="📖 بخش مستندات">🚀 Quickstart Tutorial</td>
+        <td data-label="📝 توضیح مختصر">آموزش سریع و قدم‌به‌قدم برای ساخت یک API ساده با DRF؛ شامل نصب، تعریف Serializer، View، URL و اجرای اولین درخواست</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/tutorial/quickstart/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/tutorial/quickstart/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">2</td>
+        <td data-label="📖 بخش مستندات">📘 API Guide</td>
+        <td data-label="📝 توضیح مختصر">راهنمای جامع استفاده از APIهای DRF شامل مفاهیم کلیدی مثل ViewSetها، Routers، Serializers، مجوزها، احراز هویت و غیره</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">3</td>
+        <td data-label="📖 بخش مستندات">📚 Serialization</td>
+        <td data-label="📝 توضیح مختصر">آموزش کامل نحوه تبدیل داده‌های مدل (QuerySet) به JSON و بالعکس با استفاده از Serializerها؛ شامل Fieldها و Validatorها</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/serializers/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/serializers/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">4</td>
+        <td data-label="📖 بخش مستندات">🌐 Views</td>
+        <td data-label="📝 توضیح مختصر">توضیح انواع Viewها (APIView, GenericAPIView, Mixins, Generic Views, ViewSets) و نحوه کنترل رفتار درخواست‌ها و پاسخ‌ها</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/views/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/views/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">5</td>
+        <td data-label="📖 بخش مستندات">🛣 Routers</td>
+        <td data-label="📝 توضیح مختصر">راهنمای ساخت مسیرهای خودکار (URL routing) برای ViewSetها با Routerهای مختلف (SimpleRouter, DefaultRouter و سفارشی)</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/routers/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/routers/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">6</td>
+        <td data-label="📖 بخش مستندات">🔐 Authentication</td>
+        <td data-label="📝 توضیح مختصر">معرفی انواع روش‌های احراز هویت (Basic, Session, Token, JWT, OAuth و غیره) و نحوه پیکربندی و استفاده از آنها در DRF</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/authentication/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/authentication/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">7</td>
+        <td data-label="📖 بخش مستندات">🔒 Permissions</td>
+        <td data-label="📝 توضیح مختصر">آموزش سیستم مجوزدهی DRF برای کنترل دسترسی کاربران به APIها بر اساس قوانین مختلف (IsAuthenticated، IsAdmin و غیره)</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/permissions/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/permissions/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">8</td>
+        <td data-label="📖 بخش مستندات">🛡 Throttling</td>
+        <td data-label="📝 توضیح مختصر">محدود کردن نرخ درخواست‌ها (Rate limiting) برای جلوگیری از سوءاستفاده و کنترل بار روی سرور</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/throttling/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/throttling/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">9</td>
+        <td data-label="📖 بخش مستندات">💾 Filtering and Pagination</td>
+        <td data-label="📝 توضیح مختصر">فیلتر کردن داده‌ها (با FilterBackend, DjangoFilterBackend و...) و صفحه‌بندی نتایج API با روش‌های مختلف (LimitOffset, Cursor)</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/filtering/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/filtering/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">10</td>
+        <td data-label="📖 بخش مستندات">📝 Testing</td>
+        <td data-label="📝 توضیح مختصر">نوشتن تست‌های واحد و یکپارچه برای APIها با استفاده از امکانات DRF مثل APIClient و تست درخواست/پاسخ</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/testing/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/testing/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">11</td>
+        <td data-label="📖 بخش مستندات">🔄 Versioning</td>
+        <td data-label="📝 توضیح مختصر">مدیریت و پشتیبانی از نسخه‌های مختلف API به صورت همزمان (URL, Header, QueryParam و غیره)</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/versioning/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/versioning/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">12</td>
+        <td data-label="📖 بخش مستندات">📦 Pagination</td>
+        <td data-label="📝 توضیح مختصر">تقسیم نتایج پاسخ API به صفحات مختلف با استفاده از کلاس‌های صفحه‌بندی پیش‌فرض یا سفارشی</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/pagination/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/pagination/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">13</td>
+        <td data-label="📖 بخش مستندات">🔌 ViewSets and Mixins</td>
+        <td data-label="📝 توضیح مختصر">نحوه استفاده از ViewSetها (ModelViewSet, ReadOnlyModelViewSet و...) و Mixinها برای ساخت APIهای کوتاه و منظم</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/viewsets/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/viewsets/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">14</td>
+        <td data-label="📖 بخش مستندات">⚙️ Settings</td>
+        <td data-label="📝 توضیح مختصر">تنظیمات کلی DRF شامل پیکربندی احراز هویت، مجوزها، رندررها، پارسرها، صفحه‌بندی و سایر گزینه‌ها در فایل settings.py</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/settings/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/settings/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">15</td>
+        <td data-label="📖 بخش مستندات">🧩 Parsers and Renderers</td>
+        <td data-label="📝 توضیح مختصر">نحوه خواندن درخواست‌ها و نوشتن پاسخ‌ها در فرمت‌های مختلف (JSON, XML, YAML و ...)</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/parsers/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/parsers/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">16</td>
+        <td data-label="📖 بخش مستندات">📜 Schemas and Documentation</td>
+        <td data-label="📝 توضیح مختصر">تولید خودکار مستندات API با استاندارد OpenAPI (Swagger) و ابزارهای متنوع مثل CoreAPI، Redoc</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/schemas/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/schemas/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">17</td>
+        <td data-label="📖 بخش مستندات">🔧 Customizing</td>
+        <td data-label="📝 توضیح مختصر">راهنمای سفارشی‌سازی رفتار DRF برای نیازهای خاص مثل تعریف Field سفارشی، Permission سفارشی، ViewSet سفارشی و غیره</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/api-guide/customizing-views/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/api-guide/customizing-views/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">18</td>
+        <td data-label="📖 بخش مستندات">🛠 Browsable API</td>
+        <td data-label="📝 توضیح مختصر">رابط کاربری گرافیکی و تعاملی برای APIها جهت تست سریع، ارسال درخواست و مشاهده پاسخ‌ها در مرورگر</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/topics/browsable-api/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/topics/browsable-api/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">19</td>
+        <td data-label="📖 بخش مستندات">📖 Tutorials and Examples</td>
+        <td data-label="📝 توضیح مختصر">مجموعه آموزش‌های گام‌به‌گام و مثال‌های کاربردی برای درک بهتر مفاهیم مختلف DRF و نحوه استفاده عملی</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/tutorial/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/tutorial/</a></td>
+      </tr>
+      <tr>
+        <td data-label="🔢 ردیف">20</td>
+        <td data-label="📖 بخش مستندات">🧩 Third-party packages</td>
+        <td data-label="📝 توضیح مختصر">معرفی کتابخانه‌ها و بسته‌های جانبی کاربردی و محبوب برای توسعه امکانات DRF مانند DRF-YASG، DRF-Extensions و غیره</td>
+        <td data-label="🌐 لینک مستقیم"><a href="https://www.django-rest-framework.org/community/third-party-packages/" target="_blank" rel="noopener noreferrer">https://www.django-rest-framework.org/community/third-party-packages/</a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
