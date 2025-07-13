@@ -117,9 +117,35 @@
 </style>
 </head>
 <body>
-  <h1>📚 صفحه اصلی مستندات</h1>
+    <header style='display:flex;' dir='ltr'>
+    <h1 style='transform:rotate(90deg)' >|||</h1>
+    <div></div>
+    </header>
+
+    <style>
+    header {
+        background-color: #0f172a;
+        padding: 20px 30px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        width: 100%;
+        transform: translateY(-43px);
+    }
+
+    header h1 {
+        margin: 0;
+        color: #bfdbfe;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 700;
+    }
+    </style>
+
+  <h1>یا خلق کن یا خلق می‌شی. یا تغییر بده یا تغییرت می‌دن.</h1>
   <div class="container">
-    <a href="python_docs.html" class="card-link" aria-label="مستندات Python 3.13.5">
+    <a href="./python.html" class="card-link" aria-label="مستندات Python 3.13.5">
       <div class="card" tabindex="0">
         <div class="emoji" aria-hidden="true">🐍</div>
         <div class="title">مستندات Python 3.13.5</div>
@@ -129,7 +155,7 @@
       </div>
     </a>
 
-    <a href="django_docs.html" class="card-link" aria-label="مستندات Django">
+    <a href="./django.html" class="card-link" aria-label="مستندات Django">
       <div class="card" tabindex="0">
         <div class="emoji" aria-hidden="true">🌐</div>
         <div class="title">مستندات Django</div>
@@ -139,7 +165,7 @@
       </div>
     </a>
 
-    <a href="drf_docs.html" class="card-link" aria-label="مستندات Django REST Framework">
+    <a href="./django-rest-framework.html" class="card-link" aria-label="مستندات Django REST Framework">
       <div class="card" tabindex="0">
         <div class="emoji" aria-hidden="true">🚀</div>
         <div class="title">مستندات Django REST Framework</div>
@@ -149,5 +175,24 @@
       </div>
     </a>
   </div>
+
+  <footer>
+    طراحی شده توسط AF برای خالقان دنیای جدید (:
+</footer>
+
+<style>
+footer {
+    background: #0f172a;
+    padding: 20px 30px;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-top: 40px;
+    border-top: 1px solid #1e293b;
+    width: 100%;
+    transform: translateY(110px);
+}
+</style>
+
 </body>
 </html>
